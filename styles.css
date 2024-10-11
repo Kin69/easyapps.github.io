@@ -1,0 +1,367 @@
+:root {
+    --background-dark: #1D1B1A;
+    --background-header: #161514;
+    --text-light: #FDDBD6;
+    --text-dark: #B0AFAFE;
+    --highlight-color: #FF6B6B;
+    --card-background: #2A2827;
+    --card-hover-background: #3A3938;
+    --button-background: #fddbd6;
+    --button-hover-background: #c2c6d6;
+    --font-family: 'Lato', sans-serif;
+}
+
+body {
+    background-color: var(--background-dark);
+    font-family: var(--font-family);
+    color: var(--text-light);
+}
+
+.navbar {
+    background-color: var(--background-header);
+    margin: 0px;
+}
+
+.navbar-toggler {
+    border: none; 
+}
+
+
+.nav-link:hover {
+    color: var(--highlight-color) !important;
+}
+
+.dropdown-item {
+    color: var(--text-dark);
+}
+
+.dropdown-item:hover {
+    background-color: var(--button-hover-background);
+}
+
+.card {
+    border: none;
+}
+
+.card:hover {
+    background-color: var(--card-hover-background);
+}
+
+.btn {
+    color: var(--text-dark);
+}
+
+.btn:hover {
+    background-color: var(--button-hover-background);
+}
+
+
+.left-content {
+    margin-left: 20vw;
+    flex: 1;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    text-align: center; /* Center text for smaller screens */
+}
+
+.right-content {
+    flex: 1; /* Allow right content to grow */
+    text-align: left; /* Align text to the left */
+}
+
+.menu-image {
+    margin: auto; /* Center image */
+    width: 90%; /* Use 100% for responsiveness */
+    max-width: 30vh; /* Max width to maintain size */
+    border-radius: 32px;
+    object-fit: cover; /* Ensure it covers the area without stretching */
+}
+
+
+.features-section {
+    width: 100vw;
+    background-color: var(--background-header);
+}
+
+.text-light {
+    color: var(--button-background);
+}
+
+.btn-download {
+    padding-inline: 16px;
+    padding-block: 12px;
+    color: black !important; /* Black text inside the download button */
+}
+
+.beta {
+    font-size: 0.7em;
+    vertical-align: sub;
+    color: #d3d3d3; 
+}
+
+.feature-box {
+    background-color: var(--background-dark);
+    border-radius: 10px; 
+    padding: 20px; 
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.feature-box:hover {
+    transform: scale(1.05); 
+}
+
+.feature-icon {
+    font-size: 2em; 
+    margin-bottom: 15px; 
+}
+
+.features-section {
+    background-color: var(--background-header);
+    color: white;
+}
+
+
+.btn:hover {
+    background-color: var(--button-hover-background); /* Hover background color */
+}
+
+/* Make feature titles bold */
+.card-title {
+    padding-bottom: 12px;
+    font-weight: bold; /* Ensure titles are bold */
+}
+
+/* Optional: Adjust feature boxes to ensure consistent height */
+.feature-box {
+    min-height: 220px; /* Set a minimum height for all feature boxes */
+}
+
+.feature-button {
+    padding-top: 12px;
+    color: var(--background-dark); /* Button text color */
+    background-color: var(--button-background); /* Button background color */
+    border: none; /* No border */
+    padding: 10px 20px; /* Consistent padding for buttons */
+    font-size: 1em; /* Consistent font size */
+    border-radius: 5px; /* Optional: add some rounding */
+    transition: background-color 0.3s; /* Smooth transition for hover */
+    text-align: center; /* Center the text */
+    display: inline-block; /* Ensures buttons align properly */
+    width: 100%; /* Make buttons take full width */
+    font-weight: bold;
+}
+
+.testimonials-section {
+    background-color: var(--card-background);
+    color: var(--text-light);
+}
+
+.testimonial-box {
+    border: 1px solid var(--button-background);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+}
+
+.testimonial-box:hover {
+    transform: scale(1.05);
+}
+
+.testimonials-section h2 {
+    color: var(--highlight-color);
+}
+
+.btn-highlight {
+    background-color: var(--button-background); /* Highlight color for CTA */
+    color: var(--background-dark); /* White text for better contrast */
+    padding: 10px 20px; /* Button padding */
+    border-radius: 5px; /* Rounded corners for button */
+    font-weight: bold; /* Bold text */
+}
+
+.btn-highlight:hover {
+    background-color: darken(var(-), 10%); /* Darken on hover */
+}
+
+.about-title {
+    color: whi;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+
+.gallery-section {
+    background-color: var(--background-dark); /* Same dark background */
+}
+
+
+.gallery-image img {
+    transition: transform 0.3s; /* Animation effect */
+}
+
+.gallery-image img:hover {
+    transform: scale(1.05); /* Scale image on hover */
+}
+
+
+.faq-section {
+    background-color: var(--background-header); /* Same dark background */
+}
+
+.accordion-item {
+    border: none; /* Change border color here */
+    border-radius: 5px; /* Optional: Rounded corners for the accordion items */
+}
+
+.accordion-button {
+    background-color: var(--background-dark); /* Button background */
+    color: var(--text-light); /* Text color */
+    font-weight: bold; /* Make the text bold */
+}
+
+.accordion-button:not(.collapsed) {
+    border: none;
+    background-color: var(--button-background); /* Change background when expanded */
+}
+
+
+.accordion-body {
+    border: none; /* No border for the body */
+    color: white; /* Answer text color */
+    padding: 15px;
+    background-color: var(--card-hover-background);
+}
+
+.footer-container {
+    background-color: var(--background-header);
+}
+
+.contact-section {
+    padding: 40px 0;
+    background-color: var(--background-dark); /* Same as body background */
+}
+
+.contact-section .card {
+    transition: transform 0.3s; /* Smooth transition for card hover */
+}
+
+.contact-section .card:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+
+.contact-box {
+    background-color: var(--background-header);
+}
+
+.card-text {
+    color: white
+}
+
+.btn-primary {
+    background-color: var(--button-background);
+    border: none;
+}
+
+/* Custom Modal Styling */
+.custom-modal {
+    background-color: var(--card-background);
+    color: var(--text-light);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.modal-header {
+    border-bottom: none;
+}
+
+.modal-title {
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 2.15rem;
+}
+
+
+
+.modal-body p {
+    color: var(--text-dark);
+}
+
+.d-grid .custom-btn {
+    margin: 0.6rem 0;
+    font-weight: bold;
+}
+
+/* Custom Button Styling */
+.custom-btn {
+    background-color: var(--button-background);
+    color: var(--background-dark);
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.custom-btn:hover {
+    background-color: var(--button-hover-background);
+    color: var(--background-header);
+}
+
+.modal-dialog-centered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+
+@media (max-width: 768px) {
+    .content-overlay {
+        position: absolute;
+        top: 20%; 
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: 100%;
+        z-index: 10; 
+    }
+
+    .left-content {
+        margin-left: 0ch;
+    }
+
+    .container {
+        position: relative; 
+        overflow: visible;
+    }
+
+    .left-content {
+        flex: 0 0 100%;
+    }
+
+    .right-content {
+        flex: 0 0 100%;
+        text-align: center;
+    }
+
+    .menu-image {
+        margin-top: 30vh;
+        max-width: 80%;
+        width: 20vh;
+    }
+}
+
+@media (min-width: 769px) {
+    .content-overlay {
+        margin-bottom: 40px; /* Adjust this value to increase space */
+    }
+
+    .menu-image {
+        margin-top: 20px; /* Optionally adjust top margin for the image */
+    }
+}
