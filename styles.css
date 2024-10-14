@@ -71,11 +71,9 @@ body {
 }
 
 .menu-image {
-    margin: auto; /* Center image */
-    width: 90%; /* Use 100% for responsiveness */
-    max-width: 30vh; /* Max width to maintain size */
+    height: auto;
+    max-height: 70vh;
     border-radius: 32px;
-    object-fit: cover; /* Ensure it covers the area without stretching */
 }
 
 
@@ -192,20 +190,34 @@ body {
     font-weight: bold;
 }
 
+.gallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 
 .gallery-section {
     background-color: var(--background-dark); /* Same dark background */
 }
 
+.gallery-section img {
+    height: 50vw;
+    max-height: 70vh;
+}
+
+.round-left {
+    margin-right: 5px;
+    border-radius: 32px 0px 0 32px;
+}
+
+.round-end {
+    margin-left: 5px;
+    border-radius: 0 32px 32px 0;
+}
 
 .gallery-image img {
     transition: transform 0.3s; /* Animation effect */
 }
-
-.gallery-image img:hover {
-    transform: scale(1.05); /* Scale image on hover */
-}
-
 
 .faq-section {
     background-color: var(--background-header); /* Same dark background */
@@ -236,7 +248,7 @@ body {
 }
 
 .footer-container {
-    background-color: var(--background-header);
+    background-color: var(--background-dark);
 }
 
 .contact-section {
